@@ -1,0 +1,113 @@
+<form%- include("partials/header.ejs") %>
+
+<main>
+    <div class="weather-card">
+        <form class="next-days" method="post">
+
+            <div id="day1">
+                <!-- image load from server for particular weaher condition. -->
+                <img src="" alt="weather-condition" id="next-days-img">
+               
+                <p class="next-days-temprature">
+                     <!-- next days temprature data should be feeded here. -->
+                     10 deg.
+                </p>
+            </div>
+
+            <div id="day2">
+                 <!-- image load from server for particular weaher condition. -->
+                 <img src="" alt="weather-condition" id="next-days-img">
+               
+                 <p class="next-days-temprature">
+                      <!-- next days temprature data should be feeded here. -->
+                      10 deg.
+                 </p>
+            </div>
+
+            <div id="day3">
+                 <!-- image load from server for particular weaher condition. -->
+                 <img src="" alt="weather-condition" id="next-days-img">
+               
+                 <p class="next-days-temprature">
+                      <!-- next days temprature data should be feeded here. -->
+                      10 deg.
+                 </p>
+            </div>
+
+            <div id="day4">
+                <!-- image load from server for particular weaher condition. -->
+                <img src="" alt="weather-condition" id="next-days-img">
+              
+                <p class="next-days-temprature">
+                     <!-- next days temprature data should be feeded here. -->
+                     10 deg.
+                </p>
+           </div>
+
+        </form>
+
+        <!-- today or currrent weather condition rendered here. -->
+        <div class="today">
+
+            <div class="today-1">
+
+                <div class="today-1-1">
+                    <!-- current day weather image should be placed here. -->
+                    <img src="" alt="today-weather-img">
+
+                    <h2 class="today-temprature">
+                        <!-- next days temprature data should be feeded here. -->
+                        10 deg.
+                    </h2>
+                </div>
+
+                <div class="today-1-2">
+                    <div class="today-1-2-1">
+
+                        <!-- Enter weather details here. -->
+                        <p style="font-family: 'Merienda', cursive;">Weather</p>
+                        <p style="font-family: 'Jacques Francois', serif;">
+                            <!-- current day name -->
+                            Sunday
+                        </p>
+                        <p style="font-family: 'Jacques Francois', serif;">
+                            <!-- weather condition description e.g. cloudy, sunny -->
+                            Sunny
+                        </p>
+
+                    </div>
+                    <div class="today-1-2-2">
+                        <!-- will consider later to add some weather features. -->
+                        <p>Air Quality : </p>
+                        <p>Wind : </p>
+                        <p>UV Index : </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="today-2">
+                <div class="today-2-1">
+                    <!-- searched location by user should be printed here. -->
+                    <span>Pitampura, New Delhi (110034)</span>
+                </div>
+                <div class="today-2-2">
+                    <div class="weather-grid">
+                        <div id="grid1"></div>
+                        <div id="grid2"></div>
+                        <div id="grid3"></div>
+                        <div id="grid4"></div>
+                        <div id="grid5"></div>
+                        <div id="grid6"></div>
+                        <div id="grid7"></div>
+                        <div id="grid8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<%- include("partials/footer.ejs") %>
