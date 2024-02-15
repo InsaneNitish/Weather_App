@@ -154,9 +154,10 @@ main{
 
 .weather-card{
     width: 90vw;
-    height: 80vh;
+    height: fit-content;
     display: flex;
-    justify-content:space-between;
+    flex-direction: row-reverse;
+    justify-content:center;
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
@@ -168,11 +169,12 @@ main{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    border: solid 2px var(--buttonTheme);
+    border: solid 2px black;
+    border-radius: 20px;
     padding: 20px;
     height: 60vh;
-    width: 25vw;
-    overflow-y: scroll;
+    width: auto;
+    overflow-x: scroll;
 }
 
 .next-days div:nth-child(n){
@@ -181,16 +183,17 @@ main{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: solid 2px var(--buttonTheme);
+    /* border: solid 2px var(--buttonTheme); */
     height: 15vh;
 }
 
 .today{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 15px;
-    border: solid 2px var(--buttonTheme);
+    border: solid 2px black;
+    border-radius: 20px;
     flex-wrap: wrap;
     padding: 20px;
     height: 60vh;
@@ -199,10 +202,10 @@ main{
 .today-1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 15px;
-    border: solid 2px var(--buttonTheme);
+    /* border: solid 2px var(--buttonTheme); */
     flex-wrap: wrap;
     height: 50vh;
     
@@ -220,9 +223,21 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     grid-area: 10px;
     flex-wrap: wrap;
+}
+
+.today-1-2-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+.today-1-2-2 p{
+    font-size: 1.2rem;
+    font-family: 'Merienda', cursive;
+    border-bottom: solid 2px black;
 }
 
 .today-2{
@@ -231,14 +246,14 @@ main{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    border: solid 2px var(--buttonTheme);
+    /* border: solid 2px var(--buttonTheme); */
     flex-wrap: wrap;
     padding: 20px;
     height: 50vh;
 }
 
 .today-2-1{
-    border: solid 2px var(--buttonTheme);
+    border: solid 2px black;
     font-family: 'Merienda', cursive;
     padding : 10px 20px;
     cursor: pointer;
@@ -259,7 +274,7 @@ main{
 }
 
 .weather-grid div:nth-child(n){
-    background-color: var(--buttonTheme);
+    /* background-color: var(--buttonTheme); */;
 }
 
 

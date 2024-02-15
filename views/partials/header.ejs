@@ -22,12 +22,32 @@
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
+                <li id="loc" onclick="getLocation()"><a href="#">Get Location</a></li>
             </ul>
         </nav>
-        <form action="/search" method="post">
-            <input type="search" name="search" id="search" placeholder="Enter your location...">
+        <form action="/" method="post">
+            <input type="search" name="city" id="search" placeholder="Enter your location...">
             <input type="submit" value="Search">
         </form>
     </header>
+    <script>
+    const x = document.querySelector("#loc");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+var lat;
+var long;
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+  lat = position.coords.latitude;
+  long = position.coords.longitude;
+}
+    </script>
 </body>
 </html>
